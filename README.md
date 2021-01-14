@@ -8,7 +8,7 @@ This project is a weather dashboard using the OpenWeather API.
 
 This project is a weather dashboard application with search functionality to find current weather conditions and the future weather outlook for multiple cities. 
 
-## ![Weather Dashboard](/img/Screenshot Weather App.png)
+## ![Weather Dashboard](Screenshot Weather App.png)
 
 ## User Story
 
