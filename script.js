@@ -145,3 +145,31 @@ function currentConditionsRequest(searchValue) {
     });
 };
 
+// Display and save the search history of cities
+function searchHistory(searchValue) {
+
+    if (searchValue) {
+        // Place value in the array of cities
+        if (cityList.indexOf(searchValue) === -1) {
+            cityList.push(searchValue);
+
+            // List all of the cities in user history
+            listArray();
+            clearHistoryButton.removeClass("hide");
+            weatherContent.removeClass("hide");
+        } else {
+            // Remove the existing value from
+            var removeIndex = cityList.indexOf(searchValue);
+            cityList.splice(removeIndex, 1);
+
+            // Push the value again to the array
+            cityList.push(searchValue);
+
+            // list all of the cities in user history
+            listArray();
+            clearHistoryButton.removeClass("hide");
+            weatherContent.removeClass("hide");
+        }
+    }
+}
+
